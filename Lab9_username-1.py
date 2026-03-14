@@ -36,6 +36,6 @@ def main():
             player2.win_coin()
             print("...No match! Player 2 wins a coin.")
 
-    print(f"Player 1 has {player1.get_wallet()} coins.")
-    print(f"Player 2 has {player2.get_wallet()} coins.")
+        print(f"Player 1 has {player1.get_wallet()} coins.")
+        print(f"Player 2 has {player2.get_wallet()} coins.")
 
