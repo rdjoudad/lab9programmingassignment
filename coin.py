@@ -17,3 +17,6 @@ class coin:
             self.__sideup = "Heads"
         elif toss_decison == 1:
             self.__sideup = "Tails"
+
+    def get_sideup(self):
+        return self.__sideup
