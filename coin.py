@@ -6,7 +6,7 @@ No starter code
 03/14/2026
 """
 import random
-class coin:
+class Coin:
 
     def __init__(self):
         self.__sideup = "Heads"
