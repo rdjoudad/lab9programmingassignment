@@ -21,16 +21,21 @@ def main():
         player1.toss_coin()
         player2.toss_coin()
 
-    side1 = player1.get_coin_side()
-    side2 = player2.get_coin_side()
+        side1 = player1.get_coin_side()
+        side2 = player2.get_coin_side()
 
-    print(f"Player 1 tossed {side1}")
-    print(f"Player 2 tossed {side2}")
+        print(f"Player 1 tossed {side1}")
+        print(f"Player 2 tossed {side2}")
 
-    if side1 == side2:
-        player1.win_coin()
-        player2.lose_coin()
-    else:
-        player1.lose_coin()
-        player2.win_coin()
+        if side1 == side2:
+            player1.win_coin()
+            player2.lose_coin()
+            print("...It's a match! Player 1 wins a coin.")
+        else:
+            player1.lose_coin()
+            player2.win_coin()
+            print("...No match! Player 2 wins a coin.")
+
+    print(f"Player 1 has {player1.get_wallet()} coins.")
+    print(f"Player 2 has {player2.get_wallet()} coins.")
 
