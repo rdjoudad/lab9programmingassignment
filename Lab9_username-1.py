@@ -45,6 +45,8 @@ def main():
     print(f"Player 1: {player1.get_wallet}")
     print(f"Player 2: {player2.get_wallet}")
 
+    main()
+
 
 
 
