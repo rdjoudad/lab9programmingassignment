@@ -21,4 +21,12 @@ def main():
         player1.toss_coin()
         player2.toss_coin()
 
-    side1 = player1.get_coin_toss
+    side1 = player1.get_coin_side()
+    side2 = player2.get_coin_side()
+
+    if side1 == side2:
+        player1.win_coin()
+        player2.lose_coin()
+    else:
+        player1.lose_coin()
+        player2.win_coin()
