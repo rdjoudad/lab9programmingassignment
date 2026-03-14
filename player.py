@@ -10,7 +10,25 @@ from coin import Coin
 class Player:
 
 
-    def __init__(self, name, wallet, coin):
-        self.__name = "Player 1"
+    def __init__(self, name):
+        self.__name = name
         self.__wallet = 20
         self.__coin = Coin()
+
+    def toss_coin(self):
+        return self.__coin.toss()
+    
+    def get_coin_toss(self):
+        return self.__coin.get_sideup()
+    
+    def win_coin(self):
+        self.__wallet += self.__coin
+
+    def lose_coin(self):
+        self.__wallet -= self.__coin
+
+    def get_wallet(self):
+        return self.__wallet
+    
+    def get_name(self):
+        return self.__name
