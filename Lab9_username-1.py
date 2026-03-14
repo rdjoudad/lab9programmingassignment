@@ -16,8 +16,8 @@ def main():
     print(f"Player 1 has {player1.get_wallet()} coins")
     print(f"Player 2 has {player2.get_wallet()} coins")
 
-    input("Do you want to toss the coins? (y/n) ")
-    while input == "y" or "Y":
+    answer = input("Do you want to toss the coins? (y/n) ")
+    while answer == "y" or "Y":
         player1.toss_coin()
         player2.toss_coin()
 
